@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafaf8">
+    <meta name="description" content="Joseph Alamenhe — engineer and founder based in Cape Town, South Africa.">
+    <title>Joseph Alamenhe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="site-name">Joseph Alamenhe</div>
+        <nav class="site-nav" aria-label="Sections">
+          <button type="button" class="nav-link" data-section="about" aria-controls="about" aria-expanded="false">About</button>
+          <button type="button" class="nav-link" data-section="work" aria-controls="work" aria-expanded="false">Work</button>
+          <button type="button" class="nav-link" data-section="books" aria-controls="books" aria-expanded="false">Books</button>
+          <button type="button" class="nav-link" data-section="notes" aria-controls="notes" aria-expanded="false">Notes</button>
+        </nav>
+      </header>
+
+      <main class="main-layout">
+        <div class="home-content">
+          <div class="introduction">
+            <h1>Engineer &amp; Founder.<br><span>Building CloudFlow.</span></h1>
+          </div>
+
+          <section class="currently" aria-labelledby="currently-title">
+            <h2 id="currently-title" class="eyebrow">Currently</h2>
+            <dl class="current-list">
+              <div><dt>Building</dt><dd>CloudFlow</dd></div>
+              <div><dt>Studying</dt><dd>BSc Computer Science &amp; Mathematics</dd></div>
+              <div><dt>Reading</dt><dd>[Current book]</dd></div>
+              <div><dt>Based</dt><dd>Cape Town, South Africa</dd></div>
+            </dl>
+          </section>
+        </div>
+
+        <div class="bookmark-sheet" id="bookmark-sheet" hidden>
+          <section class="sheet-section" id="about" aria-labelledby="about-title" hidden>
+            <p class="section-number">01 / About</p>
+            <h2 id="about-title">About</h2>
+            <div class="prose">
+              <p>I'm Joseph, an engineer and founder based in Cape Town.</p>
+              <p>I study Computer Science and Mathematics and spend most of my time building software, learning about systems, and working on CloudFlow.</p>
+            </div>
+          </section>
+
+          <section class="sheet-section" id="work" aria-labelledby="work-title" hidden>
+            <p class="section-number">02 / Work</p>
+            <h2 id="work-title">Work</h2>
+            <div class="work-list">
+              <article class="work-item">
+                <span class="item-number">01</span>
+                <div>
+                  <h3>CloudFlow</h3>
+                  <p class="item-meta">Founder · AI / Cloud Infrastructure</p>
+                  <p>Building thoughtful tools for the next generation of cloud work.</p>
+                </div>
+              </article>
+              <article class="work-item">
+                <span class="item-number">02</span>
+                <div>
+                  <h3>High Performance Computing</h3>
+                  <p class="item-meta">Cluster Computing / Linux / Networking</p>
+                </div>
+              </article>
+              <article class="work-item">
+                <span class="item-number">03</span>
+                <div>
+                  <h3>Selected Software</h3>
+                  <p>A small collection of things I've built.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="sheet-section" id="books" aria-labelledby="books-title" hidden>
+            <p class="section-number">03 / Books</p>
+            <h2 id="books-title">Books</h2>
+            <p class="section-intro">Currently reading</p>
+            <div class="book-list">
+              <div class="book-item"><h3>[Book title]</h3><p>[Author]</p></div>
+              <div class="book-item"><h3>[Book title]</h3><p>[Author]</p></div>
+            </div>
+          </section>
+
+          <section class="sheet-section" id="notes" aria-labelledby="notes-title" hidden>
+            <p class="section-number">04 / Notes</p>
+            <h2 id="notes-title">Notes</h2>
+            <p class="section-intro">Occasional thoughts on software, startups, systems, books and things I'm learning.</p>
+            <div class="notes-list">
+              <div class="note-item"><span>[Note title]</span><time>[Date]</time></div>
+              <div class="note-item"><span>[Note title]</span><time>[Date]</time></div>
+              <div class="note-item"><span>[Note title]</span><time>[Date]</time></div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer" aria-label="Contact links">
+        <!-- Replace these placeholder destinations with your own profiles and email. -->
+        <a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:you@example.com">Email</a>
+      </footer>
+    </div>
+  </body>
+</html>
