@@ -3,108 +3,113 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#fafaf8">
-    <meta name="description" content="Joseph Alamenhe — engineer and founder based in Cape Town, South Africa.">
-    <title>Joseph Alamenhe</title>
+    <meta name="theme-color" content="#f3efe5">
+    <meta name="description" content="The personal pages of Joseph Alamenhe — engineer, founder, and student in Cape Town.">
+    <title>Joseph Alamenhe — Personal pages</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="page">
       <header class="site-header">
-        <div class="site-name">Joseph Alamenhe</div>
-        <nav class="site-nav" aria-label="Sections">
-          <button type="button" class="nav-link" data-section="about" aria-controls="about" aria-expanded="false">About</button>
-          <button type="button" class="nav-link" data-section="work" aria-controls="work" aria-expanded="false">Work</button>
-          <button type="button" class="nav-link" data-section="books" aria-controls="books" aria-expanded="false">Books</button>
-          <button type="button" class="nav-link" data-section="notes" aria-controls="notes" aria-expanded="false">Notes</button>
+        <a class="site-name" href="#preface" data-home>Joseph Alamenhe<span>Personal pages</span></a>
+        <nav class="site-nav" aria-label="Bookmarks">
+          <button type="button" class="bookmark" data-section="about" aria-controls="about" aria-expanded="false"><span class="bookmark-index" aria-hidden="true">I</span><span>About</span></button>
+          <button type="button" class="bookmark" data-section="work" aria-controls="work" aria-expanded="false"><span class="bookmark-index" aria-hidden="true">II</span><span>Work</span></button>
+          <button type="button" class="bookmark" data-section="books" aria-controls="books" aria-expanded="false"><span class="bookmark-index" aria-hidden="true">III</span><span>Books</span></button>
+          <button type="button" class="bookmark" data-section="notes" aria-controls="notes" aria-expanded="false"><span class="bookmark-index" aria-hidden="true">IV</span><span>Notes</span></button>
         </nav>
       </header>
 
-      <main class="main-layout">
+      <main class="main-layout" id="main">
         <div class="home-content">
           <div class="introduction">
-            <h1>Engineer &amp; Founder.<br><span>Building CloudFlow.</span></h1>
+            <p class="eyebrow">A life in progress</p>
+            <h1>Engineer &amp;<br><em>Founder.</em></h1>
+            <p class="intro-copy">Building CloudFlow. Studying Computer Science &amp; Mathematics. Following the questions that come along the way.</p>
+            <p class="place">Cape Town, South Africa</p>
           </div>
-
           <section class="currently" aria-labelledby="currently-title">
-            <h2 id="currently-title" class="eyebrow">Currently</h2>
+            <h2 id="currently-title" class="eyebrow">In this chapter</h2>
             <dl class="current-list">
               <div><dt>Building</dt><dd>CloudFlow</dd></div>
               <div><dt>Studying</dt><dd>BSc Computer Science &amp; Mathematics</dd></div>
               <div><dt>Reading</dt><dd>[Current book]</dd></div>
-              <div><dt>Based</dt><dd>Cape Town, South Africa</dd></div>
             </dl>
           </section>
         </div>
 
-        <div class="bookmark-sheet" id="bookmark-sheet" hidden>
-          <section class="sheet-section" id="about" aria-labelledby="about-title" hidden>
-            <p class="section-number">01 / About</p>
-            <h2 id="about-title">About</h2>
-            <div class="prose">
-              <p>I'm Joseph, an engineer and founder based in Cape Town.</p>
-              <p>I study Computer Science and Mathematics and spend most of my time building software, learning about systems, and working on CloudFlow.</p>
-            </div>
-          </section>
-
-          <section class="sheet-section" id="work" aria-labelledby="work-title" hidden>
-            <p class="section-number">02 / Work</p>
-            <h2 id="work-title">Work</h2>
-            <div class="work-list">
-              <article class="work-item">
-                <span class="item-number">01</span>
-                <div>
-                  <h3>CloudFlow</h3>
-                  <p class="item-meta">Founder · AI / Cloud Infrastructure</p>
-                  <p>Building thoughtful tools for the next generation of cloud work.</p>
-                </div>
-              </article>
-              <article class="work-item">
-                <span class="item-number">02</span>
-                <div>
-                  <h3>High Performance Computing</h3>
-                  <p class="item-meta">Cluster Computing / Linux / Networking</p>
-                </div>
-              </article>
-              <article class="work-item">
-                <span class="item-number">03</span>
-                <div>
-                  <h3>Selected Software</h3>
-                  <p>A small collection of things I've built.</p>
-                </div>
-              </article>
-            </div>
-          </section>
-
-          <section class="sheet-section" id="books" aria-labelledby="books-title" hidden>
-            <p class="section-number">03 / Books</p>
-            <h2 id="books-title">Books</h2>
-            <p class="section-intro">Currently reading</p>
-            <div class="book-list">
-              <div class="book-item"><h3>[Book title]</h3><p>[Author]</p></div>
-              <div class="book-item"><h3>[Book title]</h3><p>[Author]</p></div>
-            </div>
-          </section>
-
-          <section class="sheet-section" id="notes" aria-labelledby="notes-title" hidden>
-            <p class="section-number">04 / Notes</p>
-            <h2 id="notes-title">Notes</h2>
-            <p class="section-intro">Occasional thoughts on software, startups, systems, books and things I'm learning.</p>
-            <div class="notes-list">
-              <div class="note-item"><span>[Note title]</span><time>[Date]</time></div>
-              <div class="note-item"><span>[Note title]</span><time>[Date]</time></div>
-              <div class="note-item"><span>[Note title]</span><time>[Date]</time></div>
-            </div>
-          </section>
+        <div class="reading-page" id="reading-page">
+          <div class="page-running-head"><span id="chapter-label">Preface</span><span aria-hidden="true">J. A.</span></div>
+          <div class="page-content" id="page-content">
+            <section class="chapter" id="preface" aria-labelledby="preface-title">
+              <p class="section-number">A note to begin</p>
+              <h2 id="preface-title" tabindex="-1">A few pages,<br><em>still being written.</em></h2>
+              <div class="prose opening-prose">
+                <p>My name is Joseph. I spend my days between building software and studying the ideas behind it — systems, mathematics, and how things fit together.</p>
+                <p>These pages bring together what I'm working on, the books on my desk, and a few thoughts along the way.</p>
+                <p>There is plenty I have yet to figure out. This is a place to keep a little of the journey.</p>
+              </div>
+              <p class="signature">Joseph</p>
+              <p class="margin-note">Choose a bookmark to turn to a chapter.</p>
+            </section>
+            <section class="chapter" id="about" aria-labelledby="about-title" hidden>
+              <p class="section-number">Chapter I · The person</p>
+              <h2 id="about-title" tabindex="-1">A little<br><em>about me.</em></h2>
+              <div class="prose opening-prose">
+                <p>I'm Joseph, an engineer and founder based in Cape Town.</p>
+                <p>I study Computer Science and Mathematics and spend most of my time building software, learning about systems, and working on CloudFlow.</p>
+                <p>My interests tend to meet somewhere between how things work and what they could become. Software, startups, and books each give me a different way to explore that.</p>
+              </div>
+              <p class="margin-note">Learning, building, beginning again.</p>
+            </section>
+            <section class="chapter" id="work" aria-labelledby="work-title" hidden>
+              <p class="section-number">Chapter II · The practice</p>
+              <h2 id="work-title" tabindex="-1">Things<br><em>in the making.</em></h2>
+              <div class="work-list">
+                <article class="work-item"><span class="item-number">01</span><div><h3>CloudFlow</h3><p class="item-meta">Founder · AI / Cloud Infrastructure</p><p>Exploring the possibilities of AI and cloud infrastructure through the work of building CloudFlow.</p></div></article>
+                <article class="work-item"><span class="item-number">02</span><div><h3>High Performance Computing</h3><p class="item-meta">Cluster Computing / Linux / Networking</p></div></article>
+                <article class="work-item"><span class="item-number">03</span><div><h3>Selected Software</h3><p>A small collection of things I've built.</p></div></article>
+              </div>
+            </section>
+            <section class="chapter" id="books" aria-labelledby="books-title" hidden>
+              <p class="section-number">Chapter III · The reading</p>
+              <h2 id="books-title" tabindex="-1">On my<br><em>reading table.</em></h2>
+              <p class="section-intro">A little space for the books keeping me company.</p>
+              <h3 class="eyebrow list-label">Currently reading</h3>
+              <!-- Replace each title and author with a book from your reading list. -->
+              <div class="book-list">
+                <div class="book-item"><span class="item-number">01</span><div><h3>[Book title]</h3><p>[Author]</p></div></div>
+                <div class="book-item"><span class="item-number">02</span><div><h3>[Book title]</h3><p>[Author]</p></div></div>
+              </div>
+              <p class="margin-note">Some ideas stay long after the last page.</p>
+            </section>
+            <section class="chapter" id="notes" aria-labelledby="notes-title" hidden>
+              <p class="section-number">Chapter IV · The margins</p>
+              <h2 id="notes-title" tabindex="-1">Notes<br><em>along the way.</em></h2>
+              <p class="section-intro">Occasional thoughts on software, startups, systems, books and things I'm learning.</p>
+              <!-- Add dated notes here as you write them. -->
+              <div class="notes-list">
+                <div class="note-item"><span>[Note title]</span><span class="note-date">[Date]</span></div>
+                <div class="note-item"><span>[Note title]</span><span class="note-date">[Date]</span></div>
+                <div class="note-item"><span>[Note title]</span><span class="note-date">[Date]</span></div>
+              </div>
+              <p class="margin-note">A thought doesn't have to be finished to be worth keeping.</p>
+            </section>
+          </div>
+          <div class="page-bottom"><span class="page-number" id="page-number" aria-label="Page 1">01</span><button class="return-link" type="button" data-home hidden>Back to the preface <span aria-hidden="true">↩</span></button></div>
         </div>
       </main>
 
-      <footer class="site-footer" aria-label="Contact links">
-        <!-- Replace these placeholder destinations with your own profiles and email. -->
-        <a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:you@example.com">Email</a>
+      <footer class="site-footer">
+        <div class="contact"><p>I'd love to connect</p><div class="contact-links" aria-label="Contact links">
+          <!-- Replace these placeholder destinations with your own profiles and email. -->
+          <a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:you@example.com">Email</a>
+        </div></div>
+        <p class="colophon">An ongoing story<span>Written from Cape Town</span></p>
       </footer>
     </div>
   </body>
